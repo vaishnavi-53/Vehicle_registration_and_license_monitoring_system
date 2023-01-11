@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_in_out</title>
+    <style>
+        body{
+            
+        }
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .home{
+            margin:auto;
+            background-color: darkgoldenrod;
+            height:100%;
+            width:100%; 
+            background-image: gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(21BD1A0553.jpg);
+             background-size: cover;
+            background-position: center;
+            position: absolute; 
+        }
+        .form-box{
+            height:500px;
+            width: 400px;
+            position:relative;
+            margin:6% auto;
+            background: #fff;
+            overflow: hidden;
+            
+        }
+        #btn{
+            top: 0;
+            left: 0;
+
+            position:absolute;
+            margin: auto;
+            width: 110px;
+            height: 100%;
+            font-size: larger;
+            color: linear-gradient(#ffad06);
+            padding:5px;
+            border-radius: 30px;
+            transition: .5s;
+        }
+        .footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+        .button-box{
+            width: 220px;
+            margin: 35px auto;
+            position:relative;
+            box-shadow: 0 0 20px 9px #9e9b9a52;
+            border-radius: 30px;
+        }
+        .icons{
+            margin: 30 px;
+        }
+        .toggle-btn{
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline:none;
+            position:relative;
+
+        }
+        .input-group{
+            top:180px;
+            position: absolute;
+            width:280px;
+            transition:.5s;
+
+        }
+        .input-field{
+            width: 100%;
+            padding:10px 0;
+            margin:5px 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background:transperent;
+
+        }
+        .submit-btn{
+            width:85%;
+            padding:10px 30px;
+            display:block;
+            margin:auto;
+            background-color: linear-gradient(to right,#ff105f,#ffad06);
+            outline: none;
+            border: 0;
+            border-radius: 30px;
+        }
+        .check-box{
+            margin: 30px 10px 30px 0;
+        }
+        span{
+            color:#777;
+            font-size: :12px;
+            bottom:68px;
+            position: absolute;
+
+        }
+        #signin{
+            left:50px;
+        }
+        #signup{
+            left:450px;
+        }
+    </style>
+<body style="background-color:#F9AC66;">
+    <div class="home"> 
+        <div class="form-box">
+            <div class ="button-box">
+                <div id="btn"></div>
+                <button  type="button" class="toggle-btn"onclick=sup() style="padding-left: 2px;"> SIGN IN</button>
+                <button  type="button" class="toggle-btn"onclick=sin() style="padding-left: 1px;"> SIGN UP</button>
+
+            </div>
+            <form id="signin" class="input-group">
+                
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember password</span>
+                <button type="submit" class="submit-btn ">Sign in</button>
+            </form>
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                
+                <input type="text" class="input-field" placeholder="Set Password" required>
+                <input type="text" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box"><span>Remember password</span>
+                <button type="submit" class="submit-btn ">Sign Up</button>
+            </form>
+        </div >
+    </div>
+    <div class="footer ">
+        <h2>@Copyright <a href=https://www.kmit.in/"> kmit </a> 2020- All Right Reserved. </h2>
+      </div>
+    <Script>
+        let x=document.getElementById("signin");
+        let y=document.getElementById("signup");
+        let z=document.getElementById("btn");
+    function sin(){
+        x.style.left="-400px";
+        y.style.left="50px"
+        z.style.left="110px"
+    }
+    function sup(){
+        x.style.left="50px";
+        y.style.left="450px"
+        z.style.left="0"
+    }
+    </Script>
+    
+</body>
+</html>
